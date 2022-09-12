@@ -2,7 +2,7 @@
   "css.validate": false,
   "scss.validate": false,
   "extensions.ignoreRecommendations": false,
-  "files.autoSave": "off",
+  "files.autoSave": "afterDelay",
   "editor.wordWrap": "on",
   "editor.largeFileOptimizations": false,
   "typescript.updateImportsOnFileMove.enabled": "always",

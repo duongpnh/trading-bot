@@ -1,5 +1,10 @@
 import React from 'react';
+import { CustomHeader } from './styles';
 
-export default function Header() {
-  return <header>Header</header>;
-}
+export const Header = () => {
+  return (
+    <CustomHeader>
+      <div className="logo">Logo</div>
+    </CustomHeader>
+  );
+};

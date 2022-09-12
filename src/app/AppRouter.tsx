@@ -1,18 +1,22 @@
 import React, { Suspense } from 'react';
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
-import { exampleModule } from './example';
+import { Route, Routes } from 'react-router-dom';
+import { Content } from './layout';
+import { ChartComponent } from './pages/chart';
+import { Home } from './pages/home';
+import { WalletComponent } from './pages/wallet';
 
 export default function AppRouter() {
   const LoadingMessage = () => <div>Loading..,</div>;
 
   return (
-    <BrowserRouter>
+    <Content>
       <Suspense fallback={<LoadingMessage />}>
-        <Switch>
-          <Route exact={true} path="/" render={() => <Redirect to="/example" />} />
-          {exampleModule.routes}
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/chart" element={<ChartComponent />} />
+          <Route path="/wallet" element={<WalletComponent />} />
+        </Routes>
       </Suspense>
-    </BrowserRouter>
+    </Content>
   );
 }

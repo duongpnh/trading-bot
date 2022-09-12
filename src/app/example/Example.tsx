@@ -23,7 +23,7 @@ export default function Example() {
     <div styleName="example">
       <header styleName="example-header">
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Edit <code>src/App.tsx</code> and save to reload a.
         </p>
         <a styleName="example-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
           {t('test')}
