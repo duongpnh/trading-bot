@@ -22,6 +22,7 @@
     "@ant-design/icons": "^4.7.0",
     "antd": "^4.23.1",
     "bootstrap": "^4.5.0",
+    "ccxt": "^1.93.41",
     "i18next": "^19.5.4",
     "inversify-hooks": "^2.1.2",
     "node-sass": "^4.14.1",
